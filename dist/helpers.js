@@ -162,24 +162,20 @@ function validateStudentData(name, rollNo, marks) {
     return { valid: true };
 }
 function calculateBestTwoTotal(midMarks) {
-    function bestTwoSum(arr) {
-        let max1 = 0, max2 = 0;
-        for (const val of arr) {
-            if (val > max1) {
-                max2 = max1;
-                max1 = val;
-            }
-            else if (val > max2) {
-                max2 = val;
-            }
-        }
-        return max1 + max2;
+    function bestTwoSumUsingMin(arr) {
+        if (arr.length === 0)
+            return 0;
+        if (arr.length <= 2)
+            return arr.reduce((a, b) => a + b, 0);
+        const total = arr.reduce((a, b) => a + b, 0);
+        const min = Math.min(...arr);
+        return total - min;
     }
     const mathsMarks = midMarks.map(m => Number(m.maths));
     const physicsMarks = midMarks.map(m => Number(m.physics));
     const chemistryMarks = midMarks.map(m => Number(m.chemistry));
-    const bestTwoMaths = bestTwoSum(mathsMarks);
-    const bestTwoPhysics = bestTwoSum(physicsMarks);
-    const bestTwoChemistry = bestTwoSum(chemistryMarks);
+    const bestTwoMaths = bestTwoSumUsingMin(mathsMarks);
+    const bestTwoPhysics = bestTwoSumUsingMin(physicsMarks);
+    const bestTwoChemistry = bestTwoSumUsingMin(chemistryMarks);
     return bestTwoMaths + bestTwoPhysics + bestTwoChemistry;
 }

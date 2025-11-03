@@ -241,7 +241,7 @@ router.get("/getRanks/:rollNo", async (req: Request<GetStudentRollNoDto>, res: R
 
 router.get("/get-all-students", async (req: Request, res: Response) => {
   try {
-    const sortKey = (req.query.sortBy as string)?.toLowerCase() || SortBy.Rank;
+    const sortKey = (req.query.sortBy as string) || SortBy.Rank;
     const students = await readStudentsFromFile();
 
     const studentsWithTotals = students.map((s) => ({
@@ -266,23 +266,30 @@ router.get("/get-all-students", async (req: Request, res: Response) => {
     }
 
     const sortedStudents = [...rankedStudents].sort((a, b) => {
-      if (sortKey === SortBy.Name) {
-        return (a["name"] as string).localeCompare(b["name"] as string);
-      } else if (sortKey === SortBy.RollNo) {
-         return String(a.rollNo).localeCompare(String(b.rollNo));
-      } else if (sortKey === SortBy.Rank) {
-        return (a["rank"] as number) - (b["rank"] as number);
+       const key = sortKey as keyof typeof a;
+      const valA = a[key];
+      const valB = b[key];
+
+      if (typeof valA === "string" && typeof valB === "string") {
+        return valA.localeCompare(valB);
+      } else if (typeof valA === "number" && typeof valB === "number") {
+        return valA - valB;
+      } else {
+        return String(valA).localeCompare(String(valB));
       }
-      throw new Error(`Invalid sortKey '${sortKey}' encountered.`);
     });
 
     res.json({
       success: true,
       data: sortedStudents,
     });
-  }  catch (err: any) {
-  console.error("Error fetching all students:", err.message, err.stack);
-  res.status(500).json({ success: false, message: err.message || "Internal Server Error" });
-}});
+  } catch (err: any) {
+    console.error("Error fetching all students:", err.message, err.stack);
+    res.status(500).json({
+      success: false,
+      message: err.message || "Internal Server Error",
+    });
+  }
+});
 
 export default router;
