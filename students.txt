@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Max",
+    "rollNo": 558,
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 40,
+        "physics": 40,
+        "chemistry": 44
+      },
+      {
+        "type": "mid2",
+        "maths": 35,
+        "physics": 38,
+        "chemistry": 41
+      },
+      {
+        "type": "mid3",
+        "maths": 37,
+        "physics": 36,
+        "chemistry": 38
+      }
+    ]
+  },
+  {
+    "name": "sri vidya",
+    "rollNo": "220311235",
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 90,
+        "physics": 80,
+        "chemistry": 92
+      },
+      {
+        "type": "mid2",
+        "maths": 85,
+        "physics": 78,
+        "chemistry": 89
+      },
+      {
+        "type": "mid3",
+        "maths": 87,
+        "physics": 76,
+        "chemistry": 86
+      }
+    ]
+  },
+  {
+    "name": "sri vidya",
+    "rollNo": "123",
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 90,
+        "physics": 80,
+        "chemistry": 92
+      },
+      {
+        "type": "mid2",
+        "maths": 85,
+        "physics": 78,
+        "chemistry": 89
+      },
+      {
+        "type": "mid3",
+        "maths": 87,
+        "physics": 76,
+        "chemistry": 86
+      }
+    ]
+  },
+  {
+    "name": "nani",
+    "rollNo": "145",
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 90,
+        "physics": 80,
+        "chemistry": 92
+      },
+      {
+        "type": "mid2",
+        "maths": 85,
+        "physics": 78,
+        "chemistry": 89
+      },
+      {
+        "type": "mid3",
+        "maths": 87,
+        "physics": 76,
+        "chemistry": 86
+      }
+    ]
+  },
+  {
+    "name": "nani",
+    "rollNo": "125",
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 100,
+        "physics": 95,
+        "chemistry": 90
+      },
+      {
+        "type": "mid2",
+        "maths": 95,
+        "physics": 93,
+        "chemistry": 87
+      },
+      {
+        "type": "mid3",
+        "maths": 97,
+        "physics": 91,
+        "chemistry": 84
+      }
+    ]
+  },
+  {
+    "name": "narendra",
+    "rollNo": 122,
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 100,
+        "physics": 95,
+        "chemistry": 90
+      },
+      {
+        "type": "mid2",
+        "maths": 95,
+        "physics": 93,
+        "chemistry": 87
+      },
+      {
+        "type": "mid3",
+        "maths": 97,
+        "physics": 91,
+        "chemistry": 84
+      }
+    ]
+  },
+  {
+    "name": "sarayu",
+    "rollNo": 1,
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 100,
+        "physics": 100,
+        "chemistry": 100
+      },
+      {
+        "type": "mid2",
+        "maths": 95,
+        "physics": 98,
+        "chemistry": 97
+      },
+      {
+        "type": "mid3",
+        "maths": 97,
+        "physics": 96,
+        "chemistry": 94
+      }
+    ]
+  },
+  {
+    "name": "sarayu",
+    "rollNo": 5,
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 30,
+        "physics": 40,
+        "chemistry": 44
+      },
+      {
+        "type": "mid2",
+        "maths": 25,
+        "physics": 38,
+        "chemistry": 41
+      },
+      {
+        "type": "mid3",
+        "maths": 27,
+        "physics": 36,
+        "chemistry": 38
+      }
+    ]
+  },
+  {
+    "name": "guna",
+    "rollNo": 2,
+    "midMarks": [
+      {
+        "type": "mid1",
+        "maths": 100,
+        "physics": 100,
+        "chemistry": 100
+      },
+      {
+        "type": "mid2",
+        "maths": 95,
+        "physics": 98,
+        "chemistry": 97
+      },
+      {
+        "type": "mid3",
+        "maths": 97,
+        "physics": 96,
+        "chemistry": 94
+      }
+    ]
+  }
+]

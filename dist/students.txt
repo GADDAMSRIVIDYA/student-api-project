@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Max",
+    "rollNo": 558,
+    "marks": {
+      "maths": 30,
+      "physics": 40,
+      "chemistry": 44
+    }
+  },
+  {
+    "name": "ramya",
+    "rollNo": 559,
+    "marks": {
+      "maths": 30,
+      "physics": 40,
+      "chemistry": 44
+    }
+  },
+  {
+    "name": "raju",
+    "rollNo": 600,
+    "marks": {
+      "maths": 30,
+      "physics": 40,
+      "chemistry": 44
+    }
+  }
+]
